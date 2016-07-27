@@ -1,0 +1,49 @@
+.warp{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.header,.footer{
+	width: 1024px;
+	height: 80px;
+	background: red;
+	text-align: center;
+}
+#content{
+	width: 1024px;
+	height:506px; 
+}
+.header ul li{
+	float: left;
+	margin: 0 15px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+
+
+/*newsBox*/
+
+.newsPage{
+	overflow: hidden;
+}
+.newsPage .leftBar{
+	width: 200px;
+	border: 1px solid red;
+	float: left;
+	margin-top: 100px;
+}
+.newsPage ul.leftBar li{
+	text-align: center;
+	border-bottom: 1px solid #000;
+	padding: 10px 0;	
+}
+.newsPage .rightInfo{
+	float: left;
+	border: 1px solid red;
+	width: 800px;
+	height: 450px;
+	margin-left: 20px;
+	text-align: center;
+}
