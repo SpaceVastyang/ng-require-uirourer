@@ -1,3 +1,3 @@
 # ng-require-uirourer
-angularjs&amp;requirejs
-requirejs+angularjs
+
+requirejs+angularjs demo
