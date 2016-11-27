@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>angular&require</title>
-	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>angular&require</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
-	<div class="warp">
-		<div class="header" ng-controller="mainController">
-			<h2>头部</h2>
-			<ul>
-				<li ng-click="goToHome()">首页</li>
-				<li ng-click="goToNews()">新闻</li>
-				<li ng-click="goToRun()">动态</li>
-				<li></li>
-			</ul>
-		</div>
-		<div id="content" ui-view></div>
-		<div class="footer"><h1>尾部</h1></div>
-	</div>
-	<script src="lib/require.js" data-main="js/main.js"></script>
+    <div class="warpper">
+        <div class="header" ng-controller="navCtro">
+            <div class="logo">
+                <div class="logoImg fl">
+                    <img src="./images/angular.jpg" height="80" width="80">
+                </div>
+                <div class="author fl">
+                    <strong>angular</strong>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="" ng-click="goHome()">Home</a>
+                </li>
+                <li>
+                    <a href="" ng-click="goAbout()">About</a>
+                </li>
+                <li>
+                    <a href="" ng-click="goContact()">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div id="content" ui-view></div>
+    </div>
+    <script src="lib/require.js" data-main="js/main.js"></script>
 </body>
+
 </html>

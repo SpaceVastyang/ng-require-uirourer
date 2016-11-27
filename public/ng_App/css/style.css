@@ -1,36 +1,12 @@
-.warp{
-	max-width: 1024px;
-	margin: 0 auto;
-}
-.header,.footer{
-	width: 1024px;
-	height: 80px;
-	background: red;
-	text-align: center;
-}
-#content{
-	width: 1024px;
-	height:506px; 
-}
-.header ul li{
-	float: left;
-	margin: 0 15px;
-	color: #fff;
-	cursor: pointer;
-}
-
-
-
-
-
 /*newsBox*/
 
 .newsPage{
 	overflow: hidden;
+    margin-top: 30px;
 }
 .newsPage .leftBar{
-	width: 200px;
-	border: 1px solid red;
+	width: 100px;
+	border: 1px solid #000;
 	float: left;
 	margin-top: 100px;
 }
@@ -41,9 +17,67 @@
 }
 .newsPage .rightInfo{
 	float: left;
-	border: 1px solid red;
+	border: 1px solid #000;
 	width: 800px;
 	height: 450px;
 	margin-left: 20px;
 	text-align: center;
+}
+
+body{
+    font-family: "微软雅黑";
+    font-size: 16px;
+}
+.fl{
+    float: left;
+}
+.warpper{
+    width: 960px;
+    margin: 0 auto;
+}
+.header{
+    height: 80px;
+    overflow: hidden;
+    border-bottom: 1px solid #000; 
+    /*background: #000;*/
+}
+.header .logo{
+    line-height: 80px;
+    float: left;
+}
+
+/*导航*/
+.header ul{
+    overflow: hidden;
+    height: 80px;
+    float: right;
+}
+.header ul li{
+    float: left;
+    line-height: 80px;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+}
+.header ul li a{
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.header ul li a:hover{
+    color: #fff;
+    background: #000;
+    transition: all 1s;
+}
+
+.author{
+    animation: rotateLogo infinite 2s linear; /** 匀速 循环**/
+}
+@keyframes rotateLogo{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
 }

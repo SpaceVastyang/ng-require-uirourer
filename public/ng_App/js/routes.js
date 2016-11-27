@@ -1,8 +1,3 @@
-/**
- * Defines the main routes in the application.
- * The routes you see here will be anchors '#/' unless specifically configured otherwise.
- */
-
 define(['./app'], function(app) {
     'use strict';
     return app.config(function($stateProvider,$urlRouterProvider) {
@@ -10,41 +5,41 @@ define(['./app'], function(app) {
         $stateProvider.state("home", {//加载主页
             url: "/home",
             templateUrl: "./htmlspa/home/home.html",
-            controller: "HomeController"
+            controller: "HomeCtro"
         })
         .state("news", {//加载new
-            url: "/news",
+            url: "/About",
             views: {
                 "": {
-                    templateUrl: "./htmlspa/news/news.html"
+                    templateUrl: "./htmlspa/About/news.html"
                 },
                 "leftBar@news": {
-                    templateUrl: "./htmlspa/news/leftBar/leftBar.html"
+                    templateUrl: "./htmlspa/About/leftBar/leftBar.html"
                 },
                 "infoBar@news": {
-                    templateUrl: "./htmlspa/news/infoBar/infoBar.html"
+                    templateUrl: "./htmlspa/About/infoBar/infoBar.html"
                 }
             },
-             controller: "NewController"
+             controller: "AboutCtro"
         }).state("news.newsInfo", {
             url: "/newsInfo",
             views: {
                 "infoBar@news": {
-                    templateUrl: "./htmlspa/news/infoBar/newsInfo/newsInfo.html"
+                    templateUrl: "./htmlspa/About/infoBar/newsInfo/newsInfo.html"
                 }
             }
         }).state("news.pushInfo", {
             url: "/pushInfo",
             views: {
                 "infoBar@news": {
-                    templateUrl: "./htmlspa/news/infoBar/pushInfo/pushInfo.html"
+                    templateUrl: "./htmlspa/About/infoBar/pushInfo/pushInfo.html"
                 }
             }
         })
-        .state("run", {//加载new
-            url: "/run",
-            templateUrl: "./htmlspa/run/run.html",
-            controller: "RunController"
+        .state("contact", {//加载contact
+            url: "/contact",
+            templateUrl: "./htmlspa/contact/contact.html",
+            controller: "ContactCtro"
         });
     })
 });
