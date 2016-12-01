@@ -17,7 +17,7 @@
 }
 .newsPage .rightInfo{
 	float: left;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 	width: 800px;
 	height: 450px;
 	margin-left: 20px;
