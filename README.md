@@ -1,3 +1,5 @@
-# ng-require-uirourer
+##安装依赖
+    $ npm install 
+##开发预览
+    $ node server.js
 
-requirejs+angularjs
