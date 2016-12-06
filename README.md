@@ -1,5 +1,5 @@
-##安装依赖
+## 安装依赖
     $ npm install 
-##开发预览
+## 开发预览
     $ node server.js
 
